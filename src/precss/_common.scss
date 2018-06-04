@@ -1,0 +1,233 @@
+@import 'mixins';
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(../fonts/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(../fonts/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    outline: none;
+    border: 1px solid transparent;
+}
+
+html, 
+body {
+    margin:0; 
+    padding:0; 
+    height:100%;
+    font-size: 11px;
+    font-family: "Roboto", Arial, Verdana, sans-serif;    
+}
+
+.container {
+    position: relative;	
+    min-width:380px; 
+    min-height:100%;
+}
+
+* {
+    margin:0px; 
+    padding:0px;
+}
+
+.centered {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    @include gradient(#3363f0, #30a5e7);
+    width: 78px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    position: relative;
+    
+    span {
+        margin: 2px;
+        height: 28px;
+        float: left;
+        width: 74px;
+        border-radius: 2px;
+        line-height: 28px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+
+    &:before {
+        content: "";
+        width: 74px;
+        height: 28px;
+        top: 2px;
+        left: 2px;
+        position: absolute;
+        @include gradient(#3973f2, #2d98e6);
+        z-index: 1;
+        border-radius: 2px;
+    }
+
+    &:after {
+        content: "";
+        width: 74px;
+        height: 28px;
+        top: 2px;
+        left: 2px;
+        position: absolute;
+        @include gradient(#2d98e6, #3973f2);
+        z-index: 2;
+        border-radius: 2px;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    &:hover,
+    &.btn-big:hover {
+        @include gradient(#376eef, #3cafe5);
+
+        span {
+            @include gradient(#3f7df2, #3bb3e5);
+        }
+
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        width: 74px;
+        height: 28px;
+        margin: 2px;
+        @include gradient(#355bf4, #3a8cef);
+
+        span,
+        &:before,
+        &:after {
+            width: 70px;
+            height: 24px;
+            font-size: 0.9em;
+            line-height: 24px;
+        }
+
+        span {
+            @include gradient(#3c68f5, #3383ed);
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.btn-big {
+        width: 147px;
+        height: 43px;
+        cursor: pointer;
+        @include gradient(#057bff, #159bff);
+
+        &:active {
+            width: 143px;
+            height: 39px;
+    
+            span,
+            &:before,
+            &:after {
+                width: 139px;
+                height: 35px;
+                font-size: 13px;
+                line-height: 35px;
+            }
+
+            span {
+                @include gradient(#3c68f5, #3383ed);
+            }
+        }
+        
+        span {
+            width: 143px;
+            height: 39px;
+            font-size: 14px;
+            line-height: 39px;                  
+        }
+
+        &:before {
+            @include gradient(#0688ff, #1292ff);
+            width: 143px;
+            height: 39px;
+        }
+
+        &:after {
+            width: 143px;
+            height: 39px;
+        }
+    }
+}
+
+.hidden {
+    opacity: 0 !important;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+.visible-h2 {
+    opacity: .07 !important;
+}
+
+.visible-h22 {
+    opacity: .24 !important;
+}

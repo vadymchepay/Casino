@@ -1,0 +1,281 @@
+.screen7 {
+    position: relative;
+
+    .centered {
+        max-width: 1140px;
+        padding-top: 140px;
+        padding-bottom: 120px;
+
+        h2 {
+            font-size: 139px;
+            font-weight: 700;
+            line-height: 100%;
+            opacity: .07;
+            color: #dee0ee;
+            opacity: .24;
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+    
+        > h3 {
+            font-size: 64px;
+            line-height: 100%;
+            font-weight: 100;
+            margin-top: -65px;
+            float: left;
+            width: 100%;
+            text-align: center;
+    
+            span {
+                color: #3f8df5;
+            }
+        }
+    
+        > h4 {
+            text-transform: uppercase;
+            color: #a2aac6;
+            font-size: 18px;
+            float: left;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            font-weight: 100;
+            padding-top: 6px;
+            padding-bottom: 35px;
+        }
+
+        .partners {
+            float: left;
+            width: 100%;
+            text-align: center;
+            padding-top: 85px;
+
+            img {
+                margin: 0 20px;
+                display: inline-block;
+            }
+        }
+
+        .solutions {
+            float: left;
+            width: 100%;
+            padding-bottom: 175px;
+
+            > div {
+                width: 187px;
+                height: 210px;
+                float: left;
+                border-radius: 20px;
+                background: #fff;
+                margin: 100px 32px 0 32px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                @include box-shadow(10px 41px 60px 10px rgba(244, 244, 246, 1));
+                text-align: center;
+                padding: 0 40px;
+                position: relative;
+
+                .btn {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    margin-left: -74px;
+
+                    &:active {
+                        margin-left: -72px;
+                    }
+                }
+
+                h4 {
+                    color: #111c42;
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    float: left;
+                    width: 100%;
+                    margin-top: 50px;
+                    line-height: 110%;
+                }
+
+                p {
+                    float: left;
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #929bbd;
+                    padding-top: 15px;
+                }
+
+                .ico {
+                    width: 72px;
+                    height: 72px;
+                    margin: 0 auto;
+                    margin-top: -45px;
+
+                    &.ico_games {
+                        background: url('../img/solution_ico1.gif') no-repeat 0 0;
+                    }
+
+                    &.ico_igaming {
+                        background: url('../img/solution_ico2.gif') no-repeat 0 0;
+                    }
+
+                    &.ico_landbase {
+                        background: url('../img/solution_ico3.gif') no-repeat 0 0;
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 106px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .screen7 {
+        .centered {
+            .solutions {
+                > div {
+                    &:first-child {
+                        margin-left: 86px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .screen7 {
+        .centered {
+            .solutions {
+                > div {
+                    &:first-child {
+                        margin-left: 86px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .screen7 {
+        .centered {
+            width: 900px;
+
+            h2 {
+                font-size: 125px;
+            }
+
+            > h3 {
+                font-size: 55px;
+                margin-top: -55px;
+            }
+
+            > h4 {
+                font-size: 16px;
+            }
+
+            .solutions {
+                > div {
+                    width: 150px;
+                    &:first-child {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .screen7 {
+        .centered {
+            width: 500px;
+
+            h2 {
+                font-size: 117px;
+            }
+
+            > h3 {
+                font-size: 51px;
+                margin-top: -51px;
+            }
+
+            > h4 {
+                font-size: 16px;
+                line-height: 140%;
+            }
+
+            .solutions {
+                > div {
+                    width: 345px;
+
+                    &:first-child {
+                        margin-left: 32px;
+                    }
+
+                    .ico {
+                        margin-top: -28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .screen7 {
+        .centered {
+            .solutions {
+                padding-bottom: 95px;
+            }
+
+            h2 {
+                font-size: 95px;
+            }
+
+            > h3 {
+                font-size: 44px;
+                margin-top: -44px;
+            }
+
+            > h4 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .screen7 {
+        .centered {
+            width: 360px;
+            padding-bottom: 60px;
+            padding-top: 100px;
+
+            h2 {
+                font-size: 79px;
+            }
+
+            > h3 {
+                font-size: 37px;
+                margin-top: -37px;
+            }
+
+            > h4 {
+                font-size: 14px;
+            }
+
+            .solutions {
+                > div {
+                    width: 210px;
+                }
+            }
+        }
+    }
+}

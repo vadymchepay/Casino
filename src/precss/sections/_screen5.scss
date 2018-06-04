@@ -1,0 +1,366 @@
+.screen5 {
+    .centered {
+        max-width: 1060px;
+        margin: 0 auto;
+        z-index: 1;
+        padding-top: 170px;
+        padding-bottom: 280px;
+
+        h2 {
+            font-size: 139px;
+            font-weight: 700;
+            line-height: 100%;
+            opacity: .07;
+            color: #dee0ee;
+            opacity: .24;
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        > h3 {
+            font-size: 64px;
+            line-height: 100%;
+            font-weight: 100;
+            margin-top: -65px;
+            float: left;
+            width: 100%;
+            padding-bottom: 100px;
+            text-align: center;
+
+            span {
+                color: #3f8df5;
+            }
+        }
+
+        .box {
+            width: 530px;
+            float: left;
+            position: relative;
+
+            .btn-big {
+                position: absolute;
+                bottom: -21px;
+                left: 50%;
+                margin-left: -105px;
+                width: 210px;
+
+                &:before,
+                &:after,
+                span {
+                    width: 206px;
+                }
+
+                &:active {
+                    width: 206px;
+                    margin-left: -103px;
+
+                    &:before,
+                    &:after,
+                    span {
+                        width: 202px;
+                    }
+                }
+            }
+        }
+
+        .lunch {
+            width: 330px;
+            float: left;
+            height: 436px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 43px;
+            padding: 86px 57px 0px 57px;
+            background: url('../img/lunch1.gif') no-repeat 0 7px;
+            @include box-shadow(0px 0px 62px 25px rgba(244, 244, 246, 1));
+            
+            ul {
+                float: left;
+                width: 100%;
+                padding-top: 33px;
+
+                li {
+                    padding-left: 15px;
+                    color: #929bbd;
+                    font-size: 14px;
+                    line-height: 120%;
+                    margin-top: 14px;
+                    background: url('../img/li.png') no-repeat left 50%;
+
+                    b {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .icon {
+                width: 48px;
+                height: 48px;
+                margin: 0 auto;
+                background: url('../img/betshop.png') no-repeat 0 0;
+                display: block;
+            }
+
+            &.lunch_blue {
+                background: url('../img/lunch2.gif') no-repeat 0 7px;
+
+                &:before {
+                    background: #39a1ff;
+                }
+
+                .icon {
+                    background: url('../img/casino.png') no-repeat 0 0;
+                }
+            }
+
+            &:before {
+                height: 7px;
+                content: "";
+                position: absolute;
+                width: 100%;
+                background: #33d5d1;
+                left: 0;
+                top: 0;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 100;
+                line-height: 100%;
+                float: left;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .screen5 {
+        .centered {
+            width: 960px;
+
+            .box {
+                width: 480px;
+
+                .lunch {
+                    width: 280px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 999px) {
+    .screen5 {
+        .centered {
+            width: 860px;
+            
+            .box {
+                width: 430px;
+
+                .lunch {
+                    width: 230px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .screen5 {
+        .centered {
+            width: 630px;
+            padding-top: 100px;
+            padding-bottom: 150px;
+
+            h2 {
+                font-size: 110px;
+            }
+
+            > h3 {
+                font-size: 49px;
+                margin-top: -49px;
+                padding-bottom: 0px;
+            }
+            
+            .box {
+                width: 530px;
+                padding: 0 50px;
+                margin-top: 80px;
+
+                .lunch {
+                    width: 330px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .screen5 {
+        .centered {
+            width: 530px;
+            padding-top: 80px;
+            padding-bottom: 120px;
+
+            h2 {
+                font-size: 102px;
+            }
+
+            > h3 {
+                font-size: 45px;
+                margin-top: -45px;
+                padding-bottom: 0px;
+            }
+            
+            .box {
+                width: 530px;
+                padding: 0 0px;
+                margin-top: 80px;
+
+                .lunch {
+                    width: 330px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .screen5 {
+        .centered {
+            width: 414px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            .box {
+                width: 414px;
+
+                .lunch {
+                    margin: 0;
+                    width: 298px;
+                }
+            }
+            
+            h2 {
+                font-size: 78px;
+            }
+
+            > h3 {
+                font-size: 40px;
+                margin-top: -37px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .screen5 {
+        .centered {
+            width: 350px;
+            
+            .box {
+                width: 350px;
+
+                .lunch {
+                    width: 248px;
+                }
+            }
+            
+            h2 {
+                font-size: 68px;
+            }
+
+            > h3 {
+                font-size: 36px;
+                margin-top: -36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .screen5 {
+        .centered {
+            width: 280px;
+            padding-top: 50px;
+            padding-bottom: 130px;
+            
+            .box {
+                width: 280px;
+
+                .lunch {
+                    width: 230px;
+                    padding: 86px 25px 0px 25px;
+                }
+            }
+            
+            h2 {
+                font-size: 54px;
+            }
+
+            > h3 {
+                font-size: 30px;
+                margin-top: -30px;
+            }
+        }
+    }
+}
+
+/*
+@media screen and (max-width: 550px) {
+    .screen5 {
+        .centered {
+            width: 280px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            .box {
+                .lunch {
+                    margin: 0;
+                    width: 246px;
+                    padding: 86px 27px 0px 27px;
+                }
+            }
+            
+            h2 {
+                font-size: 78px;
+            }
+
+            > h3 {
+                font-size: 40px;
+                margin-top: -37px;
+            }
+        }
+    }
+}
+
+*/
+/*
+@media screen and (max-width: 500px) {
+    .screen5 {
+        .centered {
+            width: 100%;
+
+            h2 {
+                font-size: 72px;
+            }
+
+            > h3 {
+                font-size: 37px;
+                margin-top: -37px;
+            }
+        }
+    }
+} */

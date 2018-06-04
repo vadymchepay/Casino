@@ -1,0 +1,542 @@
+.screen2 {
+    padding-top: 110px;
+    padding-bottom: 155px;
+
+    .centered {
+        max-width: 972px;
+        overflow: hidden;
+        position: relative;
+
+        h1 {
+            font-size: 144px;
+            float: left;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            color: #f7f8fb;
+        }
+
+        h2 {
+            font-size: 64px;
+            float: left;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            color: #111c42;
+            font-weight: 100;
+            margin-top: -66px;
+
+            span {
+                color: #3f8df5;
+            }
+        }
+
+        > h3 {
+            text-transform: uppercase;
+            color: #a2aac6;
+            font-size: 23px;
+            float: left;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            font-weight: 100;
+            padding-top: 6px;
+            padding-bottom: 110px;
+        }
+    }
+
+    .grid {
+        float: left;
+        margin: 0 0 0 56px;
+        width: 882px;
+        height: 454px;
+        border: 1px solid #d7dae2;
+        position: relative;
+
+        > ul {
+            position: relative;
+
+            li {
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;  
+                transition: opacity 1s;  
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .next {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            border: 1px solid #d7dae2;
+            @include rotate(-45deg);
+            right: -24px;
+            border-radius: 4px;
+            background: #fff;
+            top: 50%;
+            margin-top: -23px;
+            cursor: pointer;
+
+            &:before {
+                width: 12px;
+                height: 16px;
+                content: "";
+                position: absolute;
+                background: url('../img/str.gif') no-repeat 0 0;
+                @include rotate(45deg);
+                top: 50%;
+                left: 50%;
+                margin: -7px 0px 0px -5px;
+            }
+        }
+
+        .picture {
+            width: 412px;
+            float: left;
+            height: 454px;
+            position: relative;
+            border-right: 1px solid #d7dae2;
+
+            &:before {
+                width: 80%;
+                height: 10px;
+                left: -30px;
+                bottom: 40px;
+                content: "";
+                position: absolute;
+                @include box-shadow(0px 3px 40px 0px rgba(192, 193, 201, 1));
+            }
+
+            .shadow1 {
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -150px 0 0 -150px;
+                border-radius: 15px;
+                @include gradient-top(#dbf5fe, #f1e3ff);
+                opacity: .45;
+                z-index: 2;
+            }
+
+            .shadow2 {
+                width: 260px;
+                height: 336px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -168px 0 0 -130px;
+                border-radius: 15px;
+                @include gradient-top(#e4ebff, #dee7ff);
+                opacity: .45;
+                z-index: 1;
+            }
+
+            .box {
+                width: 265px;
+                height: 375px;
+                float: left;
+                background: url('../img/turn-box.jpg') no-repeat 0 0;
+                z-index: 3;
+                position: relative;
+                margin: 40px 0 0 21px;
+                border-radius: 14px;
+                padding: 0px 45px 0 62px;
+                color: #fff;
+                font-weight: 100;
+
+                .coins {
+                    width: 100%;
+                    height: 46px;
+                    float: left;
+                    margin-top: 113px;
+
+                    img {
+                        float: left;
+                    }
+                }
+
+                h3 {
+                    float: left;
+                    width: 100%;
+                    font-size: 32px;
+                    line-height: 100%;
+                    font-weight: 100;
+                    margin-top: 28px;
+                }
+
+                p {
+                    float: left;
+                    width: 100%;
+                    font-size: 15px;
+                    line-height: 120%;
+                    margin-top: 13px;
+                }
+            }
+        }
+
+        .item {
+            padding: 49px 25px 0 27px;
+            float: left;
+            width: 182px;
+            height: 178px;
+
+            &:nth-child(2) {
+                border-right: 1px solid #d7dae2;
+                border-bottom: 1px solid #d7dae2;
+            }
+
+            &:nth-child(3) {
+                border-bottom: 1px solid #d7dae2;
+            }
+
+            &:nth-child(4) {
+                border-right: 1px solid #d7dae2;
+            }
+
+            .icon {
+                width: 48px;
+                height: 48px;
+                float: left;
+                background: url('../img/turn-box-ico.jpg') no-repeat 0 0;
+
+                &.icon-omni {
+                    background-position: right 0;
+                }
+
+                &.icon-payment {
+                    background-position: left bottom;
+                }
+
+                &.icon-reliable {
+                    background-position: right bottom;
+                }
+            }
+
+            h4 {
+                float: left;
+                width: 100%;
+                font-size: 18px;
+                line-height: 100%;
+                font-weight: 100;
+                margin-top: 24px;
+            }
+
+            p {
+                float: left;
+                width: 100%;
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: 100;
+                margin-top: 7px;
+                color: #929bbd;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 850px) and (max-width: 1050px) {
+    .screen2 { 
+        padding-top: 90px;
+        padding-bottom: 135px;
+
+        .grid {
+            height: 409px;
+            width: 710px;
+
+            .picture {
+                @include zoom(0.85);
+                height: 481px;
+
+                &:before {
+                    bottom: 67px;
+                }
+            }
+
+            .item {
+                height: 177px;
+                padding: 29px 15px 0 17px;
+                width: 145px;
+            }
+        }
+
+        .centered {
+            width: 800px;
+
+            h1 {
+                font-size: 124px;
+            }
+
+            h2 {
+                font-size: 50px;
+                margin-top: -58px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 849px) {
+    .screen2 {
+        padding-top: 80px;
+        padding-bottom: 105px;
+
+        .grid {
+            margin: 0;
+            width: 565px;
+            height: 914px;
+
+            .item {
+                width: 230px;
+            }
+
+            .picture {
+                width: 565px;
+                margin: 0 auto;
+                float: none;
+                border-bottom: 1px solid #d7dae2;
+                height: 418px;
+
+                 &:before {
+                    width: 325px;
+                    left: 50%;
+                    bottom: 45px;
+                    margin-left: -162px;
+                }
+
+                .shadow1,
+                .shadow2 {
+                    display: none;
+                } 
+
+                .box {
+                    margin: 40px auto 0 auto;
+                    float: none;
+                }
+            }
+        }
+
+        .centered {
+            width: 600px;
+
+            h1 {
+                font-size: 124px;
+            }
+
+            h2 {
+                font-size: 50px;
+                margin-top: -58px;
+            }
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 689px) {
+    .screen2 {
+        padding-top: 50px;
+        padding-bottom: 65px;
+
+        .centered {
+            padding-bottom: 35px;
+        }
+
+        .grid {
+            margin: 0;
+            width: 495px;
+            height: 1390px;
+
+            .item {
+                width: 443px;
+                border: none;
+                text-align: center;
+
+                .icon {
+                    float: none;
+                    margin: 0 auto;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    border-right: none;
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid #d7dae2;
+                }
+            }
+
+            .next {
+                top: 100%;
+                left: 50%;
+                margin-left: -23px;
+                z-index: 9999;
+            }
+
+            .picture {
+                width: 495px;
+                margin: 0 auto;
+                float: none;
+                border-bottom: 1px solid #d7dae2;
+                height: 418px;
+
+                 &:before {
+                    width: 325px;
+                    left: 50%;
+                    bottom: 45px;
+                    margin-left: -162px;
+                }
+
+                .shadow1,
+                .shadow2 {
+                    display: none;
+                } 
+
+                .box {
+                    margin: 40px auto 0 auto;
+                    float: none;
+                }
+            }
+        }
+
+        .centered {
+            width: 500px;
+
+            h1 {
+                font-size: 87px;
+            }
+
+            h2 {
+                font-size: 37px;
+                margin-top: -39px;
+            }
+
+            h3 {
+                font-size: 17px;
+                padding-bottom: 65px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .smoothlyLeft {
+        animation: none;
+    }
+}
+
+.smoothlyLeft {
+    animation-name: smoothlyLeft;
+}
+
+@keyframes smoothlyLeft {
+    from {
+        opacity: 1;
+        transform: translate3d(0px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(-78px, 0, 0);
+    }
+}
+
+
+@media screen and (max-width: 519px) {
+    .screen2 {
+        padding-top: 30px;
+        padding-bottom: 45px;
+
+        .grid {
+            margin: 0;
+            width: 380px;
+            height: 1390px;
+
+            .item {
+                width: 328px;
+                border: none;
+                text-align: center;
+
+                .icon {
+                    float: none;
+                    margin: 0 auto;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    border-right: none;
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid #d7dae2;
+                }
+            }
+
+            .next {
+                top: 100%;
+                left: 50%;
+                margin-left: -23px;
+                z-index: 9999;
+            }
+
+            .picture {
+                width: 380px;
+                border-right: none;
+                margin: 0 auto;
+                float: none;
+                border-bottom: 1px solid #d7dae2;
+                height: 418px;
+
+                 &:before {
+                    width: 325px;
+                    left: 50%;
+                    bottom: 45px;
+                    margin-left: -162px;
+                }
+
+                .shadow1,
+                .shadow2 {
+                    display: none;
+                } 
+
+                .box {
+                    margin: 40px auto 0 auto;
+                    float: none;
+                }
+            }
+        }
+
+        .centered {
+            width: 385px;
+            padding-bottom: 35px;
+
+            h1 {
+                font-size: 70px;
+            }
+
+            h2 {
+                font-size: 29px;
+                margin-top: -26px;
+            }
+
+            h3 {
+                font-size: 17px;
+                padding-bottom: 65px;
+            }
+        }
+    }
+}
