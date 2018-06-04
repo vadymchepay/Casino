@@ -55,7 +55,7 @@
                     text-decoration: underline;
                 }
             }
-    
+
             li {
                 width: 100%;
                 float: left;
@@ -81,18 +81,6 @@
         }
     }
 
-    .balls {
-        width: 989px;
-        height: 1049px;
-        background: url('../img/balls1.png') no-repeat;
-        background-size: 70%;
-        background-position: center center;
-        position: absolute;
-        top: 130px;
-        left: 50%;
-        z-index: 0;
-        margin-left: -50px;
-    }
 
     .centered {
         max-width: 1140px;
@@ -102,19 +90,24 @@
         position: relative;
         height: 822px;
     }
-    
+
     .logo {
         float: left;
         display: inline-block;
-        width: 247px;
-        margin-left: -14px;
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 23px;
+        color: #fff;
+        font-family: "Monoton";
+        span {
+            color: #ff1e1e;
+        }
     }
 
     .subscribe {
         float: left;
         width: 100%;
-        height: 88px;
-//        background: url('../img/subscribe.jpg') no-repeat 50% top;
+        height: 88px; 
         background: rgba(138, 144, 255, 0.9);
         border-radius: 15px;
         color: #fff;
@@ -178,7 +171,8 @@
                     text-align: right;
                 }
 
-                a, span {
+                a,
+                span {
                     color: #3f8df5;
                     text-decoration: none;
                 }
@@ -222,7 +216,7 @@
                 margin-left: 60px;
                 line-height: 88px;
             }
-    
+
             > span {
                 font-size: 16px;
                 vertical-align: middle;
@@ -275,7 +269,7 @@
                         width: 92px;
                     }
                 }
-            } 
+            }
         }
     }
 
@@ -286,7 +280,7 @@
 
         ul {
             float: right;
-            margin-top: -5px;
+            margin-top: 5px;
 
             li {
                 float: left;
@@ -355,11 +349,16 @@
                     left: 0;
                     bottom: 0;
                     transition: opacity 0.3s;
-                    @include gradient(#3974f1, #2e97e7);
-                    @include box-shadow(0px 3px 9px 0px rgba(46, 151, 231, 0.54)); 
+                    @include gradient(#3974f1,
+                    #2e97e7);
+                    @include box-shadow(0px 3px 9px 0px rgba(46,
+                    151,
+                    231,
+                    0.54));
                 }
 
-                &.active, &:hover {
+                &.active,
+                &:hover {
                     &:before {
                         opacity: 1;
                     }
@@ -371,7 +370,7 @@
     ul.sign {
         float: right;
         list-style: none;
-        margin: 10px 0 0 0;
+        margin: 10px 0 10px 0;
         position: relative;
         z-index: 33;
 
@@ -388,14 +387,13 @@
                     }
                 }
             }*/
-
             &.lang {
                 float: left;
                 cursor: pointer;
                 margin-right: 30px;
                 position: relative;
                 margin-top: 3px;
-                
+
                 &.active {
                     .popup {
                         display: block;
@@ -412,7 +410,10 @@
                     top: 50px;
                     right: 0;
                     background: url('../img/lang.png') no-repeat;
-                    @include box-shadow(0 14px 30px 1px rgba(0,0,0, 0.2));
+                    @include box-shadow(0 14px 30px 1px rgba(0,
+                    0,
+                    0,
+                    0.2));
                     padding: 7px 0px 0px 0px;
 
                     ul {
@@ -436,7 +437,7 @@
                                     }
                                 }
 
-                                img, 
+                                img,
                                 span {
                                     vertical-align: middle;
                                 }
@@ -479,68 +480,7 @@
         }
     }
 
-    .banner {
-        height: 98px;
-        border-radius: 15px;
-        color: #111c42;
-        font-size: 34px;
-        font-weight: 300;
-        vertical-align: middle;
-        line-height: 98px;
-        width: 100%;
-        text-align: center;
-        background: #fff;
-        position: relative;
-        z-index: 10;
-
-        em {
-            font-style: normal;
-            display: inline-block;
-            padding: 0 15px;
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            left: 34px;
-            right: 34px;
-            top: -8px;
-            border-radius: 15px;
-            background: #fff;
-            opacity: .32;
-            height: 30px;
-            z-index: 1;
-        }
-
-        &:after {
-            content: "";
-            position: absolute;
-            left: 64px;
-            right: 64px;
-            top: -16px;
-            border-radius: 15px;
-            background: #fff;
-            opacity: .24;
-            height: 30px;
-            z-index: 2;
-        }
-
-        .shadow {
-            position: absolute;
-            left: 96px;
-            right: 96px;
-            top: -24px;
-            border-radius: 15px;
-            background: #fff;
-            opacity: .24;
-            height: 50px;
-            z-index: 3;
-        }
-
-        span {
-            color: #3f8df5;
-        }
-    }
+   
 
     .presentation {
         position: relative;
@@ -645,7 +585,8 @@
                 line-height: 39px;
             }
 
-            &:before, &:after {
+            &:before,
+            &:after {
                 width: 143px;
                 height: 39px;
             }
@@ -656,7 +597,7 @@
 @media screen and (min-width: 1900px) {
     .screen1 {
         background-size: 100%;
-    }  
+    }
 }
 
 
@@ -738,7 +679,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .screen1 {        
+    .screen1 {
         .launch {
             h2 {
                 font-size: 115px;
@@ -761,7 +702,7 @@
 }
 
 @media screen and (max-width: 999px) {
-    .screen1 {        
+    .screen1 {
         height: 850px;
 
         .balls {
@@ -794,7 +735,7 @@
 }
 
 @media screen and (max-width: 920px) {
-    .screen1 {     
+    .screen1 {
         .subscribe {
             background-size: auto 100%;
             height: 130px;
@@ -807,7 +748,8 @@
             .text {
                 width: 100%;
 
-                > span, b {
+                > span,
+                b {
                     line-height: 60px;
                 }
             }
@@ -824,7 +766,7 @@
 }
 
 @media screen and (max-width: 880px) {
-    .screen1 {        
+    .screen1 {
         .balls {
             @include zoom(.5);
             top: 315px;
@@ -859,7 +801,7 @@
 }
 
 @media screen and (max-width: 850px) {
-    .screen1 {        
+    .screen1 {
         .centered {
             .logo {
                 left: auto;
@@ -872,17 +814,17 @@
 }
 
 @media screen and (max-width: 800px) {
-    .screen1 {        
+    .screen1 {
         .banner {
             font-size: 17px;
             line-height: 98px;
-        } 
+        }
     }
 }
 
 
 @media screen and (max-width: 700px) {
-    .screen1 {      
+    .screen1 {
         height: 790px;
 
         .subscribe {
@@ -891,7 +833,7 @@
                 margin-left: -202px;
             }
         }
-        
+
         .centered {
             height: 712px;
         }
@@ -899,7 +841,7 @@
         .launch {
             height: 385px;
         }
-          
+
         .balls {
             top: 400px;
         }
@@ -915,22 +857,22 @@
 }
 
 @media screen and (max-width: 650px) {
-    .screen1 {       
+    .screen1 {
         .banner {
             font-size: 20px;
             line-height: 120%;
             padding: 26px 0px 0 0px;
             height: 72px;
-        } 
+        }
     }
 }
 
 @media screen and (max-width: 560px) {
-    .screen1 {   
+    .screen1 {
         .subscribe {
             .text {
                 b {
-                    margin-left: 25px; 
+                    margin-left: 25px;
                 }
             }
 
@@ -947,17 +889,18 @@
 }
 
 @media screen and (max-width: 500px) {
-    .screen1 {     
+    .screen1 {
         .banner {
             font-size: 16px;
             line-height: 120%;
             padding: 29px 0px 0 0px;
             height: 69px;
-        } 
+        }
 
         .subscribe {
             .text {
-                b, > span {
+                b,
+                > span {
                     font-size: 14px;
                     line-height: 60px;
                 }

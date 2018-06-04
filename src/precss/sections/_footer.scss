@@ -1,12 +1,13 @@
 footer {
-    position: relative; 
-    height: 275px; 
+    position: relative;
+    height: 275px;
     font-size: 14px;
     font-weight: 400;
     color: #929bbd;
     background-image: url(../../img/foooter_bg.svg);
-//    background: #121835;
+    //    background: #121835;
     padding-top: 105px;
+
 
     a {
         color: #929bbd;
@@ -34,10 +35,15 @@ footer {
         }
 
         .logo {
-            margin-left: -14px;
-
-            img {
-                float: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            a {
+                font-size: 23px;
+                color: #fff;
+                font-family: "Monoton";
+                span {
+                    color: #ff1e1e;
+                }
             }
         }
     }
@@ -182,7 +188,7 @@ footer {
 @media screen and (max-width: 480px) {
     footer {
         padding-bottom: 50px;
-        
+
         .centered {
             .col {
                 width: 130px;
