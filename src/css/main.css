@@ -244,8 +244,10 @@ body {
   opacity: .24 !important; }
 
 .screen1 {
-  height: 1180px;
-  background: url("../img/bg1.jpg") no-repeat 50% top;
+  height: 900px;
+  background: url("../../img/sc-1bg.jpg") no-repeat;
+  background-position: center top;
+  background-color: #ceced0;
   position: relative;
   overflow: hidden; }
   .screen1 .responsive {
@@ -304,7 +306,9 @@ body {
   .screen1 .balls {
     width: 989px;
     height: 1049px;
-    background: url("../img/balls1.png") no-repeat 50% 0;
+    background: url("../img/balls1.png") no-repeat;
+    background-size: 70%;
+    background-position: center center;
     position: absolute;
     top: 130px;
     left: 50%;
@@ -316,7 +320,7 @@ body {
     padding-top: 78px;
     z-index: 1;
     position: relative;
-    height: 1102px; }
+    height: 822px; }
   .screen1 .logo {
     float: left;
     display: inline-block;
@@ -326,7 +330,7 @@ body {
     float: left;
     width: 100%;
     height: 88px;
-    background: url("../img/subscribe.jpg") no-repeat 50% top;
+    background: rgba(138, 144, 255, 0.9);
     border-radius: 15px;
     color: #fff;
     position: relative;
@@ -1306,7 +1310,8 @@ body {
 .screen3 {
   width: 100%;
   height: 950px;
-  background: url("../img/screen3.jpg") no-repeat 50% top; }
+  background: url("../../img/bg.svg") no-repeat;
+  background-size: cover; }
   .screen3 .centered {
     max-width: 1140px;
     margin: 0 auto;
@@ -1507,17 +1512,19 @@ body {
       font-size: 15px; } }
 
 .screen4 {
-  background: url("../img/screen4.jpg") no-repeat 50% 0;
+  background: url("../../img/sc4-bg.jpg") no-repeat;
+  background-size: cover;
   height: 1007px;
   position: relative;
   overflow: hidden; }
   .screen4 .balls {
-    background: url("../img/screen4_ball.png") no-repeat 0 0;
-    width: 659px;
-    height: 477px;
+    background: url(../../img/free-slots-online.svg) no-repeat 0 0;
+    background-size: 70%;
+    width: 480px;
+    height: 380px;
     position: absolute;
     right: 50%;
-    margin-right: 260px;
+    margin-right: 180px;
     bottom: 0; }
   .screen4 .centered {
     max-width: 900px;
@@ -2391,7 +2398,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   color: #929bbd;
-  background: #121835;
+  background-image: url(../../img/foooter_bg.svg);
   padding-top: 105px; }
   footer a {
     color: #929bbd;
