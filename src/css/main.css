@@ -995,7 +995,7 @@ body {
         width: 265px;
         height: 375px;
         float: left;
-        background: url("../../img/turn-box1.png") no-repeat 0 0;
+        background: url("../../img/bg.svg") no-repeat 0 0;
         background-size: cover;
         z-index: 3;
         position: relative;
@@ -1008,7 +1008,7 @@ body {
           width: 100%;
           height: 46px;
           float: left;
-          margin-top: 113px; }
+          margin-top: 60px; }
           .screen2 .grid .picture .box .coins img {
             float: left; }
         .screen2 .grid .picture .box h3 {
@@ -1017,7 +1017,7 @@ body {
           font-size: 32px;
           line-height: 100%;
           font-weight: 100;
-          margin-top: 28px; }
+          margin-top: 90px; }
         .screen2 .grid .picture .box p {
           float: left;
           width: 100%;
@@ -1037,16 +1037,16 @@ body {
       .screen2 .grid .item:nth-child(4) {
         border-right: 1px solid #d7dae2; }
       .screen2 .grid .item .icon {
-        width: 48px;
-        height: 48px;
+        width: 65px;
+        height: 65px;
         float: left;
-        background: url("../img/turn-box-ico.jpg") no-repeat 0 0; }
+        background: url("../../img/hummer1.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-omni {
-          background-position: right 0; }
+          background: url("../../img/Card1.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-payment {
-          background-position: left bottom; }
+          background: url("../../img/money.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-reliable {
-          background-position: right bottom; }
+          background: url("../../img/Shield1.svg") no-repeat 0 0; }
       .screen2 .grid .item h4 {
         float: left;
         width: 100%;
@@ -1684,7 +1684,7 @@ body {
     overflow: hidden;
     margin: 0 43px;
     padding: 86px 57px 0px 57px;
-    background: url("../img/lunch1.gif") no-repeat 0 7px;
+    background: linear-gradient(to bottom, #cfdef3, #e0eafc);
     -webkit-box-shadow: 0px 0px 62px 25px #f4f4f6;
     -moz-box-shadow: 0px 0px 62px 25px #f4f4f6;
     box-shadow: 0px 0px 62px 25px #f4f4f6; }
@@ -1705,22 +1705,12 @@ body {
       width: 48px;
       height: 48px;
       margin: 0 auto;
-      background: url("../img/betshop.png") no-repeat 0 0;
+      background: url("../../img/trophy.svg") no-repeat 0 0;
       display: block; }
     .screen5 .centered .lunch.lunch_blue {
-      background: url("../img/lunch2.gif") no-repeat 0 7px; }
-      .screen5 .centered .lunch.lunch_blue:before {
-        background: #39a1ff; }
+      background: linear-gradient(to bottom, #cfdef3, #e0eafc); }
       .screen5 .centered .lunch.lunch_blue .icon {
-        background: url("../img/casino.png") no-repeat 0 0; }
-    .screen5 .centered .lunch:before {
-      height: 7px;
-      content: "";
-      position: absolute;
-      width: 100%;
-      background: #33d5d1;
-      left: 0;
-      top: 0; }
+        background: url("../../img/Five_dots.svg") no-repeat 0 0; }
     .screen5 .centered .lunch h3 {
       font-size: 24px;
       font-weight: 100;
@@ -2260,11 +2250,11 @@ body {
           margin: 0 auto;
           margin-top: -45px; }
           .screen7 .centered .solutions > div .ico.ico_games {
-            background: url("../img/solution_ico1.gif") no-repeat 0 0; }
+            background: url("../../img/Five_dots.svg") no-repeat 0 0; }
           .screen7 .centered .solutions > div .ico.ico_igaming {
-            background: url("../img/solution_ico2.gif") no-repeat 0 0; }
+            background: url("../../img/SUN_cubes.svg") no-repeat 0 0; }
           .screen7 .centered .solutions > div .ico.ico_landbase {
-            background: url("../img/solution_ico3.gif") no-repeat 0 0; }
+            background: url("../../img/casino2.svg") no-repeat 0 0; }
         .screen7 .centered .solutions > div:first-child {
           margin-left: 106px; }
 

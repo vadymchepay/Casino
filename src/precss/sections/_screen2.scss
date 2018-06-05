@@ -142,7 +142,7 @@
                 width: 265px;
                 height: 375px;
                 float: left;
-                background: url('../../img/turn-box1.png') no-repeat 0 0;
+                background: url('../../img/bg.svg') no-repeat 0 0;
                 background-size: cover;
                 z-index: 3;
                 position: relative;
@@ -156,7 +156,7 @@
                     width: 100%;
                     height: 46px;
                     float: left;
-                    margin-top: 113px;
+                    margin-top: 60px;
 
                     img {
                         float: left;
@@ -169,7 +169,7 @@
                     font-size: 32px;
                     line-height: 100%;
                     font-weight: 100;
-                    margin-top: 28px;
+                    margin-top: 90px;
                 }
 
                 p {
@@ -202,21 +202,22 @@
             }
 
             .icon {
-                width: 48px;
-                height: 48px;
+                width: 65px;
+                height: 65px;
                 float: left;
-                background: url('../img/turn-box-ico.jpg') no-repeat 0 0;
+                background: url('../../img/hummer1.svg') no-repeat 0 0;
 
                 &.icon-omni {
-                    background-position: right 0;
+                background: url('../../img/Card1.svg') no-repeat 0 0;               
+
                 }
 
                 &.icon-payment {
-                    background-position: left bottom;
+                background: url('../../img/money.svg') no-repeat 0 0; 
                 }
 
                 &.icon-reliable {
-                    background-position: right bottom;
+                background: url('../../img/Shield1.svg') no-repeat 0 0;  
                 }
             }
 
