@@ -1,7 +1,7 @@
 .screen3 {
     width: 100%;
     height: 950px;
-    background: url('../../img/bg.svg') no-repeat;
+    background: url('../../img/rocket-launch.png') no-repeat;
     background-size: cover;
 
     .centered {
@@ -21,7 +21,7 @@
     .info {
         width: 500px;
         float: right;
-        color: #fff;
+        color:#063757;
         padding-top: 160px;
 
         .button {
@@ -39,8 +39,8 @@
         }
 
         h2 {
-            color: #6db9f6;
-            opacity: .24;
+            opacity: .1;
+            color: #063757;
             font-weight: 700;
             font-size: 135px;
             line-height: 100%;

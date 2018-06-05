@@ -628,8 +628,8 @@ body {
       font-size: 139px;
       font-weight: 700;
       line-height: 100%;
-      opacity: .07;
-      color: #dee0ee;
+      opacity: .4;
+      color: rgba(138, 144, 255, 0.9);
       float: left;
       width: 100%;
       margin-left: -3px; }
@@ -995,7 +995,8 @@ body {
         width: 265px;
         height: 375px;
         float: left;
-        background: url("../img/turn-box.jpg") no-repeat 0 0;
+        background: url("../../img/turn-box1.png") no-repeat 0 0;
+        background-size: cover;
         z-index: 3;
         position: relative;
         margin: 40px 0 0 21px;
@@ -1256,7 +1257,7 @@ body {
 .screen3 {
   width: 100%;
   height: 950px;
-  background: url("../../img/bg.svg") no-repeat;
+  background: url("../../img/rocket-launch.png") no-repeat;
   background-size: cover; }
   .screen3 .centered {
     max-width: 1140px;
@@ -1271,7 +1272,7 @@ body {
   .screen3 .info {
     width: 500px;
     float: right;
-    color: #fff;
+    color: #063757;
     padding-top: 160px; }
     .screen3 .info .button {
       width: 150px;
@@ -1286,8 +1287,8 @@ body {
       line-height: 41px;
       margin: 35px 0 0 46px; }
     .screen3 .info h2 {
-      color: #6db9f6;
-      opacity: .24;
+      opacity: .1;
+      color: #063757;
       font-weight: 700;
       font-size: 135px;
       line-height: 100%; }
@@ -1458,7 +1459,7 @@ body {
       font-size: 15px; } }
 
 .screen4 {
-  background: url("../../img/sc4-bg.jpg") no-repeat;
+  background: url("../../img/sc-1bg1.jpg") no-repeat;
   background-size: cover;
   height: 1007px;
   position: relative;
@@ -1469,9 +1470,9 @@ body {
     width: 480px;
     height: 380px;
     position: absolute;
-    right: 50%;
+    right: 43%;
     margin-right: 180px;
-    bottom: 0; }
+    bottom: 75px; }
   .screen4 .centered {
     max-width: 900px;
     margin: 0 auto;
@@ -1511,10 +1512,11 @@ body {
       .screen4 .centered .list li {
         float: left;
         width: 100%;
-        color: #929bbd;
+        color: #053656;
         font-size: 13px;
+        font-weight: 600;
         margin-top: 20px;
-        background: url(../img/li.png) no-repeat left 50%;
+        background: url(../../img/li.png) no-repeat left 50%;
         padding-left: 29px; }
     .screen4 .centered .partners {
       position: relative;
@@ -1896,18 +1898,20 @@ body {
     padding: 85px 0px 15px 0px;
     z-index: 3; }
     .screen6 .box .after {
-      width: 225px;
-      height: 350px;
+      width: 188px;
+      height: 371px;
       position: absolute;
       left: -165px;
       top: 350px;
-      background: url("../../img/Rocket.svg") no-repeat 0 0; }
+      background: url("../../img/Rocket_icon.png") no-repeat 0 0;
+      background-size: cover;
+      transform: rotate(30deg); }
     .screen6 .box h2 {
       font-size: 139px;
       font-weight: 700;
       line-height: 100%;
-      opacity: .07;
-      color: #dee0ee;
+      opacity: .4;
+      color: rgba(138, 144, 255, 0.9);
       opacity: .24;
       float: left;
       width: 100%;

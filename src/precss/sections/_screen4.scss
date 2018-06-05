@@ -1,5 +1,5 @@
 .screen4 {
-    background: url('../../img/sc4-bg.jpg') no-repeat;
+    background: url('../../img/sc-1bg1.jpg') no-repeat;
     background-size: cover;
     height: 1007px;
     position: relative;
@@ -10,9 +10,9 @@
         width: 480px;
         height: 380px;
         position: absolute;
-        right: 50%;
+        right: 43%;
         margin-right: 180px;
-        bottom: 0;
+        bottom: 75px;
     }
     
     .centered {
@@ -57,10 +57,11 @@
             li {
                 float: left;
                 width: 100%;
-                color: #929bbd;
+                color: #053656;
                 font-size: 13px;
+                font-weight: 600;
                 margin-top: 20px;
-                background: url(../img/li.png) no-repeat left 50%;
+                background: url(../../img/li.png) no-repeat left 50%;
                 padding-left: 29px;
             }
         }
