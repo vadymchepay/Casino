@@ -256,8 +256,8 @@ footer {
 
 .screen1 {
   height: 900px;
-  background: url("../img/sc-1bg.jpg") no-repeat;
-  background-position: center top;
+  background: url("../img/sc-1bg.png") no-repeat;
+  background-size: cover;
   background-color: #ceced0;
   position: relative;
   overflow: hidden; }
@@ -1534,7 +1534,7 @@ footer {
         margin-left: 0; } }
 
 .screen4 {
-  background: url("../img/sc-1bg1.jpg") no-repeat;
+  background: url("../img/sc-1bg1.png") no-repeat;
   background-size: cover;
   height: 1007px;
   position: relative;
