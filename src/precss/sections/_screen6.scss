@@ -198,7 +198,7 @@
 @media screen and (min-width: 1900px) {
     .screen6 {
         .background {
-            background-size: 100%;
+            background-size: cover;
         }
     }  
 }
@@ -292,17 +292,15 @@
                 font-size: 16px;
             }
 
-            .before,
+            
             .after {
                 @include zoom(0.6);
             }
 
-            .before {
-                top: 350px;
-            }
+
 
             .after {
-                top: 950px;
+                top: 350px;
             }
         }
     }  
@@ -349,15 +347,13 @@
                 padding-bottom: 20px;
             }
 
-            .before,
+       
             .after {
                 top: 900px;
-                @include zoom(0.25);
+                @include zoom(0.4);
             }
 
-            .after {
-                top: 2300px;
-            }
+        
 
             .styled-select {
                 width: 318px;

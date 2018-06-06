@@ -14,7 +14,6 @@
         margin-right: 180px;
         bottom: 75px;
     }
-    
     .centered {
         max-width: 900px;
         margin: 0 auto;
@@ -118,7 +117,7 @@
 
 @media screen and (min-width: 1900px) {
     .screen4 {
-        background-size: 100%;
+        background-size: cover;
     }
 }
 
@@ -149,6 +148,11 @@
                 font-size: 42px;
                 margin-top: -42px;
                 padding-bottom: 70px;
+            }
+            .list {
+                li {
+                    color: #929bbd;
+                }
             }
         }
     }
@@ -218,6 +222,32 @@
         .centered {
             .list {
                 width: 350px;
+            }
+            .partners {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .screen4 {
+        .centered {
+            padding-top: 80px;
+            h2 {
+                font-size: 55px;
+            }
+            p {
+                width: 310px;
+            }
+            .list {
+                padding-top: 10px;
+                width: 300px;
+                li {
+                    width: 95%;
+                    padding-left: 20px;
+                    color: #7384a6;
+                }
             }
             .partners {
                 padding-top: 20px;

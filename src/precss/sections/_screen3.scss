@@ -3,27 +3,23 @@
     height: 950px;
     background: url('../../img/rocket-launch.png') no-repeat;
     background-size: cover;
-
     .centered {
         max-width: 1140px;
         margin: 0 auto;
         z-index: 1;
         padding-top: 160px;
     }
-
     .middle {
         height: 630px;
         display: table-cell;
         vertical-align: middle;
         width: 1140px;
     }
-
     .info {
         width: 500px;
         float: right;
-        color:#063757;
+        color: #063757;
         padding-top: 160px;
-
         .button {
             width: 150px;
             height: 41px;
@@ -37,7 +33,6 @@
             line-height: 41px;
             margin: 35px 0 0 46px;
         }
-
         h2 {
             opacity: .1;
             color: #063757;
@@ -45,7 +40,6 @@
             font-size: 135px;
             line-height: 100%;
         }
-
         h3 {
             font-size: 64px;
             line-height: 100%;
@@ -53,7 +47,6 @@
             margin-left: 44px;
             margin-top: -65px;
         }
-
         h4 {
             font-size: 24px;
             line-height: 100%;
@@ -62,7 +55,6 @@
             padding-top: 4px;
             text-transform: uppercase;
         }
-
         p {
             font-size: 15px;
             line-height: 120%;
@@ -70,7 +62,6 @@
             padding-top: 20px;
         }
     }
-
     .monitor {
         width: 767px;
         @include zoom(.7);
@@ -78,13 +69,11 @@
         float: left;
         background: url('../img/monitor.png') no-repeat 0 0;
         position: relative;
-
         > div {
             width: 767px;
             height: 685px;
             float: left;
             position: relative;
-
             &:before {
                 content: "";
                 width: 722px;
@@ -97,7 +86,6 @@
                 top: 0;
                 left: 0;
             }
-    
             &:after {
                 content: "";
                 width: 722px;
@@ -111,9 +99,6 @@
                 left: 0;
             }
         }
-
-        
-
         .screen {
             background: url('../img/screen.png') no-repeat 0 0;
             width: 722px;
@@ -136,20 +121,7 @@
 
 @media screen and (min-width: 1900px) {
     .screen3 {
-        background-size: 100% 100%;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .screen3 {
-        .centered {
-            overflow: visible;
-        }
-
-        .monitor {
-            @include zoom(1);
-            margin-left: -290px;
-        }
+        background-size: cover;
     }
 }
 
@@ -157,30 +129,24 @@
     .screen3 {
         .centered {
             max-width: 940px;
-
             .middle {
                 width: 940px;
             }
         }
-
         .info {
             width: 420px;
             padding-top: 140px;
-
             h2 {
                 font-size: 112px;
             }
-
             h3 {
                 font-size: 53px;
                 margin-left: 39px;
             }
-
             h4 {
                 font-size: 19px;
             }
         }
-
         .monitor {
             @include zoom(0.6);
         }
@@ -193,25 +159,27 @@
             max-width: 740px;
             padding-left: 20px;
             padding-right: 20px;
-
             .middle {
                 display: block;
                 width: 100%;
             }
         }
-
         .monitor {
             float: none;
             margin-left: auto;
             margin-right: auto;
             @include zoom(0.7);
         }
-
         .info {
             width: 100%;
             text-align: center;
             padding-top: 60px;
-
+                     .button {
+                color: #1797e8;
+                border: 1px solid #1797e8;
+                margin-left: 0;
+                
+            }
             p {
                 margin-left: 0;
             }
@@ -222,21 +190,23 @@
 @media screen and (max-width: 720px) {
     .screen3 {
         height: 820px;
-
         .monitor {
             @include zoom(0.5);
         }
-
         .info {
+            .button {
+                color: #1797e8;
+                border: 1px solid #1797e8;
+                margin-left: 0;
+                
+            }
             h2 {
                 font-size: 100px;
             }
-
             h3 {
                 font-size: 48px;
                 margin-top: -48px;
             }
-
             h4 {
                 font-size: 17px;
             }
@@ -247,27 +217,54 @@
 @media screen and (max-width: 520px) {
     .screen3 {
         height: 720px;
-
         .centered {
             padding-top: 100px;
         }
-        
         .monitor {
             @include zoom(0.4);
         }
-
         .info {
             h2 {
                 font-size: 90px;
             }
-
             h3 {
                 font-size: 44px;
                 margin-top: -484x;
             }
-
             h4 {
                 font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .screen3 {
+        height: 720px;
+        .centered {
+            padding-top: 100px;
+            padding-left: 5px;
+            padding-right: 5px;
+            .monitor {
+                @include zoom(0.35);
+            }
+        }
+        .info {
+            padding-top: 120px;
+            h2 {
+                font-size: 90px;
+            }
+            h3 {
+                font-size: 44px;
+                margin-top: -484x;
+                margin-left: 0;
+            }
+            h4 {
+                font-size: 15px;
+                margin-left: 0;
+            }
+            .button{
+                margin-left: 0;
             }
         }
     }

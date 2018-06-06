@@ -50,7 +50,8 @@ img {
 
 html,
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
   font-size: 11px;
@@ -58,8 +59,18 @@ body {
 
 .container {
   position: relative;
-  min-width: 380px;
+  min-width: 320px;
   min-height: 100%; }
+
+.screen1,
+.screen2,
+.screen3,
+.screen4,
+.screen5,
+.screen6,
+.screen7,
+footer {
+  width: 100%; }
 
 * {
   margin: 0px;
@@ -238,7 +249,7 @@ body {
   opacity: 1 !important; }
 
 .visible-h2 {
-  opacity: .07 !important; }
+  opacity: .12 !important; }
 
 .visible-h22 {
   opacity: .24 !important; }
@@ -332,7 +343,7 @@ body {
     .screen1 .subscribe .subscribe_popup {
       position: absolute;
       width: 851px;
-      background: url("../img/thanks.jpg") no-repeat 50% 0;
+      background: rgba(138, 144, 255, 0.9);
       background-size: auto 100%;
       top: 106px;
       z-index: 9999;
@@ -348,14 +359,17 @@ body {
         left: 50%;
         transition: opacity 2s; }
       .screen1 .subscribe .subscribe_popup .logo {
-        display: block;
-        margin: 0;
         text-align: center;
-        width: 100%;
-        height: 57px;
-        overflow: hidden;
+        display: block;
         position: relative !important;
-        left: 0 !important; }
+        left: 0 !important;
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 23px;
+        color: #fff;
+        font-family: "Monoton"; }
+        .screen1 .subscribe .subscribe_popup .logo span {
+          color: #ff1e1e; }
       .screen1 .subscribe .subscribe_popup h3 {
         color: #fff;
         float: left;
@@ -378,30 +392,8 @@ body {
           text-align: right; }
         .screen1 .subscribe .subscribe_popup p a,
         .screen1 .subscribe .subscribe_popup p span {
-          color: #3f8df5;
+          color: #2e06ff;
           text-decoration: none; }
-      .screen1 .subscribe .subscribe_popup:before {
-        height: 50px;
-        left: 21px;
-        right: 21px;
-        bottom: -28px;
-        border-radius: 15px;
-        background: url("../img/thanks.jpg") no-repeat 50% bottom;
-        opacity: 0.3;
-        position: absolute;
-        content: "";
-        z-index: 1; }
-      .screen1 .subscribe .subscribe_popup:after {
-        height: 50px;
-        left: 21px;
-        right: 21px;
-        bottom: -14px;
-        border-radius: 15px;
-        background: url("../img/thanks.jpg") no-repeat 50% bottom;
-        opacity: 0.3;
-        position: absolute;
-        content: "";
-        z-index: 1; }
     .screen1 .subscribe .text {
       float: left;
       width: auto; }
@@ -474,7 +466,8 @@ body {
             margin-top: -2px; }
   .screen1 ul.menu {
     float: left;
-    list-style: none; }
+    list-style: none;
+    margin-left: 50px; }
     .screen1 ul.menu li {
       float: left;
       width: auto;
@@ -675,7 +668,7 @@ body {
 
 @media screen and (min-width: 1900px) {
   .screen1 {
-    background-size: 100%; } }
+    background-size: cover; } }
 
 @media screen and (min-width: 1800px) {
   .screen1 .balls {
@@ -858,6 +851,21 @@ body {
   .screen1 ul.sign li.lang {
     margin-right: 10px; } }
 
+@media screen and (max-width: 320px) {
+  .screen1 .centered {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .screen1 .centered .logo {
+      margin-right: -15px; }
+    .screen1 .centered .sign .up {
+      margin: 0; }
+  .screen1 .subscribe .text b {
+    margin-left: 5px; }
+  .screen1 .launch h2 {
+    font-size: 75px; }
+  .screen1 .launch > div {
+    margin-bottom: 10px; } }
+
 .screen2 {
   padding-top: 110px;
   padding-bottom: 155px; }
@@ -945,16 +953,6 @@ body {
       height: 454px;
       position: relative;
       border-right: 1px solid #d7dae2; }
-      .screen2 .grid .picture:before {
-        width: 80%;
-        height: 10px;
-        left: -30px;
-        bottom: 40px;
-        content: "";
-        position: absolute;
-        -webkit-box-shadow: 0px 3px 40px 0px #c0c1c9;
-        -moz-box-shadow: 0px 3px 40px 0px #c0c1c9;
-        box-shadow: 0px 3px 40px 0px #c0c1c9; }
       .screen2 .grid .picture .shadow1 {
         width: 300px;
         height: 300px;
@@ -1254,6 +1252,59 @@ body {
         font-size: 17px;
         padding-bottom: 65px; } }
 
+@media screen and (max-width: 320px) {
+  .screen2 {
+    padding-top: 30px;
+    padding-bottom: 45px; }
+    .screen2 .grid {
+      margin: 0;
+      width: 310px;
+      height: 1390px; }
+      .screen2 .grid .item {
+        width: 328px;
+        border: none;
+        text-align: center; }
+        .screen2 .grid .item .icon {
+          float: none;
+          margin: 0 auto; }
+        .screen2 .grid .item:nth-child(2), .screen2 .grid .item:nth-child(4) {
+          border-right: none; }
+        .screen2 .grid .item:nth-child(4) {
+          border-bottom: 1px solid #d7dae2; }
+      .screen2 .grid .next {
+        top: 100%;
+        left: 50%;
+        margin-left: -23px;
+        z-index: 9999; }
+      .screen2 .grid .picture {
+        width: 310px;
+        border-right: none;
+        margin: 0;
+        float: none;
+        border-bottom: 1px solid #d7dae2;
+        height: 418px; }
+        .screen2 .grid .picture .shadow1,
+        .screen2 .grid .picture .shadow2 {
+          display: none; }
+        .screen2 .grid .picture .box {
+          margin: 40px 0 0 0;
+          float: none;
+          padding: 0px 15px 0 30px; }
+      .screen2 .grid .item {
+        width: 310px;
+        padding: 49px 0px 0 0px; }
+    .screen2 .centered {
+      width: 320px;
+      padding: 0 5px 35px 5px; }
+      .screen2 .centered h1 {
+        font-size: 60px; }
+      .screen2 .centered h2 {
+        font-size: 29px;
+        margin-top: -26px; }
+      .screen2 .centered h3 {
+        font-size: 17px;
+        padding-bottom: 65px; } }
+
 .screen3 {
   width: 100%;
   height: 950px;
@@ -1363,18 +1414,7 @@ body {
 
 @media screen and (min-width: 1900px) {
   .screen3 {
-    background-size: 100% 100%; } }
-
-@media screen and (min-width: 1800px) {
-  .screen3 .centered {
-    overflow: visible; }
-  .screen3 .monitor {
-    zoom: 1;
-    -ms-zoom: 1;
-    -webkit-zoom: 1;
-    -moz-transform: scale(1, 1);
-    -moz-transform-origin: left center;
-    margin-left: -290px; } }
+    background-size: cover; } }
 
 @media screen and (max-width: 1200px) {
   .screen3 .centered {
@@ -1419,6 +1459,10 @@ body {
     width: 100%;
     text-align: center;
     padding-top: 60px; }
+    .screen3 .info .button {
+      color: #1797e8;
+      border: 1px solid #1797e8;
+      margin-left: 0; }
     .screen3 .info p {
       margin-left: 0; } }
 
@@ -1431,6 +1475,10 @@ body {
       -webkit-zoom: 0.5;
       -moz-transform: scale(0.5, 0.5);
       -moz-transform-origin: left center; }
+    .screen3 .info .button {
+      color: #1797e8;
+      border: 1px solid #1797e8;
+      margin-left: 0; }
     .screen3 .info h2 {
       font-size: 100px; }
     .screen3 .info h3 {
@@ -1457,6 +1505,33 @@ body {
       margin-top: -484x; }
     .screen3 .info h4 {
       font-size: 15px; } }
+
+@media screen and (max-width: 320px) {
+  .screen3 {
+    height: 720px; }
+    .screen3 .centered {
+      padding-top: 100px;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .screen3 .centered .monitor {
+        zoom: 0.35;
+        -ms-zoom: 0.35;
+        -webkit-zoom: 0.35;
+        -moz-transform: scale(0.35, 0.35);
+        -moz-transform-origin: left center; }
+    .screen3 .info {
+      padding-top: 120px; }
+      .screen3 .info h2 {
+        font-size: 90px; }
+      .screen3 .info h3 {
+        font-size: 44px;
+        margin-top: -484x;
+        margin-left: 0; }
+      .screen3 .info h4 {
+        font-size: 15px;
+        margin-left: 0; }
+      .screen3 .info .button {
+        margin-left: 0; } }
 
 .screen4 {
   background: url("../../img/sc-1bg1.jpg") no-repeat;
@@ -1552,7 +1627,7 @@ body {
 
 @media screen and (min-width: 1900px) {
   .screen4 {
-    background-size: 100%; } }
+    background-size: cover; } }
 
 @media screen and (min-width: 1850px) {
   .screen4 .balls {
@@ -1576,7 +1651,9 @@ body {
     .screen4 .centered h3 {
       font-size: 42px;
       margin-top: -42px;
-      padding-bottom: 70px; } }
+      padding-bottom: 70px; }
+    .screen4 .centered .list li {
+      color: #929bbd; } }
 
 @media screen and (max-width: 650px) {
   .screen4 .centered .list {
@@ -1628,6 +1705,23 @@ body {
     width: 350px; }
   .screen4 .centered .partners {
     padding-top: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .screen4 .centered {
+    padding-top: 80px; }
+    .screen4 .centered h2 {
+      font-size: 55px; }
+    .screen4 .centered p {
+      width: 310px; }
+    .screen4 .centered .list {
+      padding-top: 10px;
+      width: 300px; }
+      .screen4 .centered .list li {
+        width: 95%;
+        padding-left: 20px;
+        color: #7384a6; }
+    .screen4 .centered .partners {
+      padding-top: 20px; } }
 
 .screen5 .centered {
   max-width: 1060px;
@@ -1818,52 +1912,25 @@ body {
       font-size: 30px;
       margin-top: -30px; } }
 
-/*
-@media screen and (max-width: 550px) {
-    .screen5 {
-        .centered {
-            width: 280px;
-            padding-left: 50px;
-            padding-right: 50px;
-            
-            .box {
-                .lunch {
-                    margin: 0;
-                    width: 246px;
-                    padding: 86px 27px 0px 27px;
-                }
-            }
-            
-            h2 {
-                font-size: 78px;
-            }
+@media screen and (max-width: 480px) {
+  .screen5 .centered {
+    width: 300px;
+    padding-top: 50px;
+    padding-bottom: 130px;
+    padding-left: 20px;
+    padding-right: 0; }
+    .screen5 .centered .box {
+      width: 280px;
+      margin-top: 80px; }
+      .screen5 .centered .box .lunch {
+        width: 230px;
+        padding: 86px 25px 0px 25px; }
+    .screen5 .centered h2 {
+      font-size: 54px; }
+    .screen5 .centered > h3 {
+      font-size: 30px;
+      margin-top: -30px; } }
 
-            > h3 {
-                font-size: 40px;
-                margin-top: -37px;
-            }
-        }
-    }
-}
-
-*/
-/*
-@media screen and (max-width: 500px) {
-    .screen5 {
-        .centered {
-            width: 100%;
-
-            h2 {
-                font-size: 72px;
-            }
-
-            > h3 {
-                font-size: 37px;
-                margin-top: -37px;
-            }
-        }
-    }
-} */
 .screen6 {
   height: 900px;
   position: relative; }
@@ -2023,7 +2090,7 @@ body {
 
 @media screen and (min-width: 1900px) {
   .screen6 .background {
-    background-size: 100%; } }
+    background-size: cover; } }
 
 @media screen and (max-width: 1500px) {
   .screen6 .box_hidden {
@@ -2082,17 +2149,14 @@ body {
       margin-top: -45px; }
     .screen6 .box h4 {
       font-size: 16px; }
-    .screen6 .box .before,
     .screen6 .box .after {
       zoom: 0.6;
       -ms-zoom: 0.6;
       -webkit-zoom: 0.6;
       -moz-transform: scale(0.6, 0.6);
       -moz-transform-origin: left center; }
-    .screen6 .box .before {
-      top: 350px; }
     .screen6 .box .after {
-      top: 950px; } }
+      top: 350px; } }
 
 @media screen and (max-width: 750px) {
   .screen6 .box_hidden {
@@ -2117,16 +2181,13 @@ body {
     .screen6 .box h4 {
       font-size: 14px;
       padding-bottom: 20px; }
-    .screen6 .box .before,
     .screen6 .box .after {
       top: 900px;
-      zoom: 0.25;
-      -ms-zoom: 0.25;
-      -webkit-zoom: 0.25;
-      -moz-transform: scale(0.25, 0.25);
+      zoom: 0.4;
+      -ms-zoom: 0.4;
+      -webkit-zoom: 0.4;
+      -moz-transform: scale(0.4, 0.4);
       -moz-transform-origin: left center; }
-    .screen6 .box .after {
-      top: 2300px; }
     .screen6 .box .styled-select {
       width: 318px; }
     .screen6 .box .btn {
@@ -2325,6 +2386,29 @@ body {
     .screen7 .centered .solutions > div {
       width: 210px; } }
 
+@media screen and (max-width: 320px) {
+  .screen7 .centered {
+    width: 300px;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .screen7 .centered h2 {
+      font-size: 70px; }
+    .screen7 .centered > h3 {
+      font-size: 37px;
+      margin-top: -37px; }
+    .screen7 .centered > h4 {
+      font-size: 14px; }
+    .screen7 .centered .solutions > div {
+      width: 300px;
+      margin-left: 0;
+      padding: 0; }
+    .screen7 .centered .solutions > div:first-child {
+      width: 300px;
+      margin-left: 0;
+      padding: 0; } }
+
 footer {
   position: relative;
   height: 275px;
@@ -2406,7 +2490,8 @@ footer {
 @media screen and (max-width: 999px) {
   footer {
     height: auto;
-    padding: 50px 0; }
+    padding: 110px 0;
+    background-size: cover; }
     footer .centered {
       padding: 0 30px; } }
 

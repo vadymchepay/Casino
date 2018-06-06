@@ -148,6 +148,7 @@
     }
 }
 
+
 @media screen and (max-width: 1150px) {
     .screen7 {
         .centered {
@@ -274,6 +275,46 @@
             .solutions {
                 > div {
                     width: 210px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .screen7 {
+        .centered {
+            width: 300px;
+            padding-bottom: 60px;
+            padding-top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            h2 {
+                font-size: 70px;
+            }
+
+            > h3 {
+                font-size: 37px;
+                margin-top: -37px;
+            }
+
+            > h4 {
+                font-size: 14px;
+            }
+
+            .solutions {
+                > div  {
+                    width: 300px;
+                    margin-left: 0;
+                    padding: 0;
+                }
+            }
+            .solutions {
+                > div:first-child  {
+                    width: 300px;
+                    margin-left: 0;
+                    padding: 0;
                 }
             }
         }
