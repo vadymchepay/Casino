@@ -256,7 +256,7 @@ footer {
 
 .screen1 {
   height: 900px;
-  background: url("../../img/sc-1bg.jpg") no-repeat;
+  background: url("../img/sc-1bg.jpg") no-repeat;
   background-position: center top;
   background-color: #ceced0;
   position: relative;
@@ -993,7 +993,7 @@ footer {
         width: 265px;
         height: 375px;
         float: left;
-        background: url("../../img/bg.svg") no-repeat 0 0;
+        background: url("../img/bg.svg") no-repeat 0 0;
         background-size: cover;
         z-index: 3;
         position: relative;
@@ -1038,13 +1038,13 @@ footer {
         width: 65px;
         height: 65px;
         float: left;
-        background: url("../../img/hummer1.svg") no-repeat 0 0; }
+        background: url("../img/hummer1.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-omni {
-          background: url("../../img/Card1.svg") no-repeat 0 0; }
+          background: url("../img/Card1.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-payment {
-          background: url("../../img/money.svg") no-repeat 0 0; }
+          background: url("../img/money.svg") no-repeat 0 0; }
         .screen2 .grid .item .icon.icon-reliable {
-          background: url("../../img/Shield1.svg") no-repeat 0 0; }
+          background: url("../img/Shield1.svg") no-repeat 0 0; }
       .screen2 .grid .item h4 {
         float: left;
         width: 100%;
@@ -1308,7 +1308,7 @@ footer {
 .screen3 {
   width: 100%;
   height: 950px;
-  background: url("../../img/rocket-launch.png") no-repeat;
+  background: url("../img/rocket-launch.png") no-repeat;
   background-size: cover; }
   .screen3 .centered {
     max-width: 1140px;
@@ -1534,13 +1534,13 @@ footer {
         margin-left: 0; } }
 
 .screen4 {
-  background: url("../../img/sc-1bg1.jpg") no-repeat;
+  background: url("../img/sc-1bg1.jpg") no-repeat;
   background-size: cover;
   height: 1007px;
   position: relative;
   overflow: hidden; }
   .screen4 .balls {
-    background: url(../../img/free-slots-online.svg) no-repeat 0 0;
+    background: url(../img/free-slots-online.svg) no-repeat 0 0;
     background-size: 70%;
     width: 480px;
     height: 380px;
@@ -1591,7 +1591,7 @@ footer {
         font-size: 13px;
         font-weight: 600;
         margin-top: 20px;
-        background: url(../../img/li.png) no-repeat left 50%;
+        background: url(../img/li.png) no-repeat left 50%;
         padding-left: 29px; }
     .screen4 .centered .partners {
       position: relative;
@@ -1799,12 +1799,12 @@ footer {
       width: 48px;
       height: 48px;
       margin: 0 auto;
-      background: url("../../img/trophy.svg") no-repeat 0 0;
+      background: url("../img/trophy.svg") no-repeat 0 0;
       display: block; }
     .screen5 .centered .lunch.lunch_blue {
       background: linear-gradient(to bottom, #cfdef3, #e0eafc); }
       .screen5 .centered .lunch.lunch_blue .icon {
-        background: url("../../img/Five_dots.svg") no-repeat 0 0; }
+        background: url("../img/Five_dots.svg") no-repeat 0 0; }
     .screen5 .centered .lunch h3 {
       font-size: 24px;
       font-weight: 100;
@@ -1960,7 +1960,7 @@ footer {
       position: absolute;
       left: -165px;
       top: 350px;
-      background: url("../../img/Rocket_icon.png") no-repeat 0 0;
+      background: url("../img/Rocket_icon.png") no-repeat 0 0;
       background-size: cover;
       transform: rotate(30deg); }
     .screen6 .box h2 {
@@ -2084,7 +2084,7 @@ footer {
     height: 587px;
     position: absolute;
     width: 100%;
-    background: url("../../img/bg.svg") repeat;
+    background: url("../img/bg.svg") repeat;
     z-index: 2;
     top: 156px; }
 
@@ -2311,11 +2311,11 @@ footer {
           margin: 0 auto;
           margin-top: -45px; }
           .screen7 .centered .solutions > div .ico.ico_games {
-            background: url("../../img/Five_dots.svg") no-repeat 0 0; }
+            background: url("../img/Five_dots.svg") no-repeat 0 0; }
           .screen7 .centered .solutions > div .ico.ico_igaming {
-            background: url("../../img/SUN_cubes.svg") no-repeat 0 0; }
+            background: url("../img/SUN_cubes.svg") no-repeat 0 0; }
           .screen7 .centered .solutions > div .ico.ico_landbase {
-            background: url("../../img/casino2.svg") no-repeat 0 0; }
+            background: url("../img/casino2.svg") no-repeat 0 0; }
         .screen7 .centered .solutions > div:first-child {
           margin-left: 106px; }
 
@@ -2415,7 +2415,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   color: #929bbd;
-  background-image: url(../../img/foooter_bg.svg);
+  background-image: url(../img/foooter_bg.svg);
   padding-top: 105px; }
   footer a {
     color: #929bbd;

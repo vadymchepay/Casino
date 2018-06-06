@@ -128,7 +128,7 @@
                 width: 265px;
                 height: 375px;
                 float: left;
-                background: url('../../img/bg.svg') no-repeat 0 0;
+                background: url('../img/bg.svg') no-repeat 0 0;
                 background-size: cover;
                 z-index: 3;
                 position: relative;
@@ -182,15 +182,15 @@
                 width: 65px;
                 height: 65px;
                 float: left;
-                background: url('../../img/hummer1.svg') no-repeat 0 0;
+                background: url('../img/hummer1.svg') no-repeat 0 0;
                 &.icon-omni {
-                    background: url('../../img/Card1.svg') no-repeat 0 0;
+                    background: url('../img/Card1.svg') no-repeat 0 0;
                 }
                 &.icon-payment {
-                    background: url('../../img/money.svg') no-repeat 0 0;
+                    background: url('../img/money.svg') no-repeat 0 0;
                 }
                 &.icon-reliable {
-                    background: url('../../img/Shield1.svg') no-repeat 0 0;
+                    background: url('../img/Shield1.svg') no-repeat 0 0;
                 }
             }
             h4 {

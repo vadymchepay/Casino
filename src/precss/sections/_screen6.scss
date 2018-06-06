@@ -30,7 +30,7 @@
             position: absolute;
             left: -165px;
             top: 350px;
-            background: url('../../img/Rocket_icon.png') no-repeat 0 0;
+            background: url('../img/Rocket_icon.png') no-repeat 0 0;
             background-size: cover;
             transform: rotate(30deg);
         }
@@ -188,7 +188,7 @@
         height: 587px;
         position: absolute;
         width: 100%;
-        background: url('../../img/bg.svg') repeat;
+        background: url('../img/bg.svg') repeat;
         z-index: 2;
         top: 156px;
     }
